@@ -10,6 +10,6 @@ public class Java_08_Calculator_of_Body_Mass_Index {
         kg = input.nextDouble();
 
         index = kg / (height * height);
-        System.out.println(index);
+        System.out.println("Your Body Mass Index is : " + index);
     }
 }
