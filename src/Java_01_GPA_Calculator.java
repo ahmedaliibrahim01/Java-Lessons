@@ -1,11 +1,10 @@
 import java.util.Scanner;
 public class Java_01_GPA_Calculator {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         int math, physics, chemistry, turkish, history, music, sum;
         double average;
         String passingStatus;
-
-        Scanner input = new Scanner(System.in);
 
         System.out.print("Your math score: ");
         math = input.nextInt();
@@ -23,7 +22,7 @@ public class Java_01_GPA_Calculator {
         sum = (math + physics + chemistry + turkish + history + music);
         average = sum / 6.0;
         System.out.println("Your average score: " + average);
-        passingStatus = average > 60 ? "You passed the exam" : "You failed the exam";
+        passingStatus = average >= 60 ? "You passed the exam" : "You failed the exam";
         System.out.println(passingStatus);
     }
 }

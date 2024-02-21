@@ -1,9 +1,8 @@
 import java.util.Scanner;
 public class Java_02_VAT_Calculator {
     public static void main(String[] args) {
-        double priceExcludingVat, priceIncludingVat, vatAmount, vatRate;
-
         Scanner input = new Scanner(System.in);
+        double priceExcludingVat, priceIncludingVat, vatAmount, vatRate;
 
         System.out.print("Enter fee amount: ");
         priceExcludingVat = input.nextInt();
