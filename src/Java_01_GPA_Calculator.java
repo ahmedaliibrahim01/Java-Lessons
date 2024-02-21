@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Java_01_GPA_Calculator {
     public static void main(String[] args) {
         int math, physics, chemistry, turkish, history, music, sum;
