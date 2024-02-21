@@ -3,24 +3,24 @@ import java.util.Scanner;
 public class Java_09_Grocery_Program {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double armut = 3.14, elma = 3.67, domates = 1.11, muz = 0.95, patlican = 5.00, kg, total;
-        System.out.print("Armut Kaç Kilo ? : ");
+        double pear = 3.14, apple = 3.67, tomato = 1.11, banana = 0.95, eggplant = 5.00, kg, total;
+        System.out.print("How Many Kilos of Pears? : ");
         kg = input.nextDouble();
-        armut *= kg;
-        System.out.print("Elma Kaç Kilo ? : ");
+        pear *= kg;
+        System.out.print("How Many Kilos of Apple? : ");
         kg = input.nextDouble();
-        elma *= kg;
-        System.out.print("Domates Kaç Kilo ? : ");
+        apple *= kg;
+        System.out.print("How Many Kilos of Tomato? : ");
         kg = input.nextDouble();
-        domates *= kg;
-        System.out.print("Muz Kaç Kilo ? : ");
+        tomato *= kg;
+        System.out.print("How Many Kilos of Banana? : ");
         kg = input.nextDouble();
-        muz *= kg;
-        System.out.print("Patlican Kaç Kilo ? : ");
+        banana *= kg;
+        System.out.print("How Many Kilos of Eggplant? : ");
         kg = input.nextDouble();
-        patlican *= kg;
+        eggplant *= kg;
 
-        total = (armut + elma + domates + muz + patlican);
-        System.out.println("Toplam Tutar : " + total + " TL");
+        total = (pear + apple + tomato + banana + eggplant);
+        System.out.println("Total Amount : " + total + " TL");
     }
 }
