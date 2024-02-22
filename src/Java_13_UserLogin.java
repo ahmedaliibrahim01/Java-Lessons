@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Java_13_UserLogin {
     public static void main(String[] args) {
-        String userName, password, passwordReset;
-        int select;
+        String userName, password, passwordReset, select;
+
         Scanner input = new Scanner(System.in);
 
         System.out.print("Username : ");
@@ -16,10 +16,10 @@ public class Java_13_UserLogin {
         } else if (!password.equals("Java")){
             System.out.println("Login failed !");
             System.out.println("Şifreni yenilemek ister misin? Evet içi : 1 yaz, Hayır için 2 ");
-            select = input.nextInt();
-            if (select == 1) {
-                //input.nextLine();
+            select = input.nextLine();
+            if (select.equals("1")) {
                 System.out.print("Lütfen yeni şifrenizi giriniz : ");
+                //input.nextLine();
                 passwordReset = input.nextLine();
                 if (passwordReset.equals("Java") || (passwordReset.equals(password))){
                     System.out.println("Şifre oluşturulamadı, lütfen başka şifre giriniz.");
