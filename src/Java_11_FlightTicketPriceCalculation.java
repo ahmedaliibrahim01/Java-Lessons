@@ -37,7 +37,7 @@ public class Java_11_FlightTicketPriceCalculation {
                     } else if (age < 65) {
                         finalPrice = 2 * (normalPrice - (normalPrice * backRate));
                         System.out.println("Total Amount = " + finalPrice + " TL");
-                    } else if (age >= 65) {
+                    } else {
                         finalPrice = normalPrice - (normalPrice * discountRate30);
                         if (tripType == 2) {
                             finalPrice = 2 * (finalPrice - (finalPrice * backRate));
@@ -45,8 +45,6 @@ public class Java_11_FlightTicketPriceCalculation {
                         } else {
                             System.out.println("Total Amount = " + finalPrice + " TL");
                         }
-                    }else {
-                        System.out.println("Total Amount = " + normalPrice + " TL");
                     }
                 }else {
                     System.out.println("You Entered Incorrect Data !");
