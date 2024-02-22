@@ -1,8 +1,9 @@
-import java.util.Scanner;
+import org.w3c.dom.ls.LSOutput;
 
-public class Java_22_SumOfOddNumbers {
+import java.util.Scanner;
+public class Java_23_Loops2 {
     public static void main(String[] args) {
-        int number, total = 0;
+        int number, total = 0, i = 0;
         boolean isZero = false;
 
         Scanner input = new Scanner(System.in);
@@ -10,8 +11,8 @@ public class Java_22_SumOfOddNumbers {
         do {
             System.out.print("Enter Number : ");
             number = input.nextInt();
-            if (number > -1 ){
-                if (number % 2 != 0){
+            if ((number % 2 == 0)){
+                if ((number % 2 == 0) && (number % 4 == 0)){
                     total = total + number;
                 }
                 isZero = true;
@@ -21,6 +22,5 @@ public class Java_22_SumOfOddNumbers {
         }while (isZero);
 
         System.out.println("Total : " + total);
-
     }
 }
