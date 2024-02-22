@@ -14,5 +14,6 @@ public class Java_19_LeapYear {
         }else {
             System.out.println("Not leap");
         }
+
     }
 }
