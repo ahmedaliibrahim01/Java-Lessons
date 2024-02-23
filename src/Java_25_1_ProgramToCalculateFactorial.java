@@ -9,7 +9,7 @@ public class Java_25_1_ProgramToCalculateFactorial {
 
         for (int i = 1; i <= n; i++) {
             total = total*i;
-            System.out.println(total);
         }
+        System.out.println("Number : " + n + " Factorial is : " + total);
     }
 }
