@@ -12,7 +12,6 @@ public class Java_24_ProgramToFindPowersOf4And5 {
             System.out.println("Power of 4 is : " + i);
         }
 
-
         for (int i = 1; i <= n; i*=5) {
             System.out.println("Power of 5 is : " + i);
         }
