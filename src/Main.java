@@ -1,20 +1,35 @@
 import java.util.Scanner;
 public class Main {
-    public static void main(String[] args) {
-        int number, us, total = 1;
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter Number : ");
-        number = input.nextInt();
-        System.out.print("Enter Numner : ");
-        us = input.nextInt();
+    public static void main(String[] args) {// Değişkenler tanımlanmıştır.
+        int max=0,min=0;
+        //Kullanıcıdan kaç adet sayı girileceği verisi alındı
+        Scanner klavye = new Scanner(System.in);
+        System.out.print("Kaç tane sayı gireceksiniz:");
+        int n = klavye.nextInt();
 
-        for (int i = 1; i <= us; i++) {
-            total = total*number;
-            System.out.println(i);
+        //Kullanıcından istenen sayı adeti kadar değer alınır.
+
+        for (int i=1;i<=n;i++){
+            System.out.print(i+". Sayıyı giriniz:");
+            int s= klavye.nextInt();
+
+            //Kullanıcıdan max ve min değerler tespit edilir.
+            if (i==0) {
+                max = s;
+                min = s;
+            } else {
+                if (s > max) {
+                    max = s;
+                }
+
+                if (s < min) {
+                    min = s;
+                }
+            }
         }
 
-        System.out.println(total);
-        
+        System.out.println("En büyük sayı: " + max);
+        System.out.println("En küçük sayı: " + min);
     }
 
 }
